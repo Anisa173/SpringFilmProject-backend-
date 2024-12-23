@@ -22,6 +22,6 @@ public interface UserService {
 	User findUserCartById(Integer id) throws Exception;
 
 	void deleteCustomer(Integer Id) throws Exception;
-User findUserById(Integer id) throws Exception;
+    User findUserById(Integer id) throws Exception;
 
 }

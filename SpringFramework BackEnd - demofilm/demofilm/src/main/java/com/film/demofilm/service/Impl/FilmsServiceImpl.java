@@ -3,6 +3,7 @@ package com.film.demofilm.service.Impl;
 import java.math.BigDecimal;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -18,6 +19,7 @@ import jakarta.validation.Valid;
 
 @Validated
 @Service
+@Qualifier("FilmsServiceImpl")
 public class FilmsServiceImpl implements FilmsService {
 	@Autowired
 	private final FilmsRepository fRepository;

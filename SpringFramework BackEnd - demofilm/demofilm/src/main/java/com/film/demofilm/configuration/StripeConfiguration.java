@@ -8,8 +8,8 @@ import com.stripe.Stripe;
 
 @Configuration
 public class StripeConfiguration {
-@Autowired
-public StripeConfiguration(@Value("${stripe.secret-key}") String stripeSecretKey) {
-	Stripe.apiKey = stripeSecretKey;
-}
+	@Autowired
+	public StripeConfiguration(@Value("${stripe.secret-key}") String stripeSecretKey) {
+		Stripe.apiKey = stripeSecretKey;
+	}
 }

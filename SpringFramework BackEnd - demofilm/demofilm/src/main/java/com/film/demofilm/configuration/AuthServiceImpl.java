@@ -11,14 +11,13 @@ import com.film.demofilm.domain.dto.UserLoginDto;
 import com.film.demofilm.entity.User;
 import com.film.demofilm.repository.UserRepository;
 
-import jakarta.validation.Valid;
+
 
 @Profile("rest")
 @Service
 public class AuthServiceImpl {
 	@Autowired
 	private UserRepository userRepository;
-
 	@Autowired
 	private AuthenticationManager authManager;
 	@Autowired

@@ -3,7 +3,6 @@ package com.film.demofilm.configuration;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.stream.Stream;
-
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
@@ -16,7 +15,7 @@ import com.film.demofilm.entity.User;
 public class SecurityUtils {
 
 	private SecurityUtils() {
-	
+
 	}
 
 	public static String getAfterDetailsCompletedRedirectUrl() {
@@ -67,7 +66,6 @@ public class SecurityUtils {
 		}
 		return null;
 	}
-	
 
 	/**
 	 * Get the JWT of the current user.

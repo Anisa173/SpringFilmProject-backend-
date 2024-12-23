@@ -11,11 +11,6 @@ public interface FilmsCategoryService {
 
 	FilmCategoriesDto addCategory(@Valid FilmCategoriesDto filmDto) throws Exception;
 
-	/*
-	 * FilmCategoriesDto updateName(@Valid FilmCategoriesDto dto, Integer id) throws
-	 * Exception;
-	 */
-
 	void delete(Integer id) throws Exception;
 
 	List<FilmCategoriesDto> getFilmCategories() throws Exception;

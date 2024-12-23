@@ -49,20 +49,10 @@ public class FilmsCategoryServiceImpl implements FilmsCategoryService {
 		return fcMapper.toDto(result1);
 	}
 
-	/*@Override
-	/*public FilmCategoriesDto updateName(@Valid FilmCategoriesDto dto, Integer id) throws Exception {
-		var result = findFcById(dto.getIdCtg());
-		var adminId = SecurityUtils.getLoggedUserId();
-		User user = userService.findUserById(adminId);
-		result.setAdm(user);
-		var updated = fcMapper.toUpdate(dto, result);
-		return fcMapper.toDto(fcRepo.save(updated));
-	}**/
 
 	@Override
 	public void delete(Integer id) throws Exception {
 		fcRepo.deleteById(id);
-
 	}
 
 	@Override
