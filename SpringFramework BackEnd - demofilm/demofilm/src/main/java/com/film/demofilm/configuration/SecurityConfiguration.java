@@ -97,8 +97,8 @@ public class SecurityConfiguration {
 			auth.requestMatchers("/api/actors/delete/{idFilm}/{actorId}").hasRole("ADMIN");
 			auth.requestMatchers("/api/actors/all").hasRole("ADMIN");
 			auth.requestMatchers("/api/actors/all/{idFilm}").hasRole("ADMIN");
-			//auth.requestMatchers("/api/actors/retrieve/{idFilm}/actors").hasRole("ADMIN");
-			//auth.requestMatchers("/api/actors/retrieve/{idFilm}/actors").hasRole("CUSTOMER");
+			auth.requestMatchers("/api/actors/retrieve/{idFilm}/{actorId}").hasRole("ADMIN");
+			auth.requestMatchers("/api/actors/retrieve/{idFilm}/{actorId}").hasRole("CUSTOMER");
 			auth.requestMatchers("/api/actors/{idFilm}/{actorId}").hasRole("ADMIN");
 			auth.requestMatchers("/api/subscribedFilm/add/free/{userId}/films").hasAuthority("CUSTOMER");
 			auth.requestMatchers("/api/subscribedFilm/add/paid/{userId}/films").hasAuthority("CUSTOMER");

@@ -71,10 +71,10 @@ public class ActorsController {
 		return ResponseEntity.ok(aService.getActorsByFilmId(idFilm));
 	}
 
-	//@GetMapping("/retrieve/{idFilm}/actors")
-	//public ResponseEntity<ActorsDto> getActorFilmById(@RequestParam Integer actorId, @PathVariable Integer idFilm)
-	//		throws Exception {
-	//	return ResponseEntity.ok(aService.getActorFilmById(actorId, idFilm));
+	@GetMapping("/retrieve/{idFilm}/{actorId}")
+        public ResponseEntity<ActorsDto> getActorFilmById(@PathVariable Integer actorId, @PathVariable Integer idFilm)
+			throws Exception {
+		return ResponseEntity.ok(aService.getActorFilmById(actorId, idFilm));
 	}
 
 }
