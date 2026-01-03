@@ -17,9 +17,9 @@ public interface ActorsService {
 
 	Actors getActor(Integer actorId) throws Exception;
 
-	Actors getActorById(Integer actorId, Integer idFilm) throws Exception;
+	//Actors getActorById(Integer actorId, Integer idFilm) throws Exception;
 
-	ActorsDto getActorFilmById(Integer actorId, Integer idFilm) throws Exception;
+        ActorsDto getActorFilmById(Integer actorId, Integer idFilm) throws Exception;
 
 	List<ActorsDto> getActorsByFilmId(Integer idFilm) throws Exception;
 
